@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-ejemplos",
+  "version": "1.0.0",
+  "description": "Coleccion de ejemplos en node (patrones, codigo, etc) de lo que voy aprendiendo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobmeneses/nodejs-ejemplos.git"
+  },
+  "author": "Jacob Meneses",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacobmeneses/nodejs-ejemplos/issues"
+  },
+  "homepage": "https://github.com/jacobmeneses/nodejs-ejemplos#readme",
+  "dependencies": {
+    "pg": "^7.4.3"
+  }
+}

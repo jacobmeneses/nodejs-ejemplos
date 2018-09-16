@@ -1,0 +1,19 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres:10.5
+    restart: always
+    volumes:
+      - "./dbdata:/docker-entrypoint-initdb.d"
+    environment:
+      POSTGRES_PASSWORD: example
+    networks:
+      - network-nodejs-prueba
+    ports:
+      - "5444:5432"
+volumes:
+  dbdata:
+networks:
+  network-nodejs-prueba:
+
