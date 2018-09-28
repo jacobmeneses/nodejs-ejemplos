@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script>
+    var ws = new WebSocket('ws://' + window.document.location.host);
+
+    
+    ws.addEventListener( 'open',  function() {
+      console.log('websocket open');
+    });
+
+    ws.addEventListener( 'message',  function(message) {
+      console.log('hello there');
+      var msgDiv = document.createElement('div');
+      msgDiv.innerHTML = message.data;
+      document.getElementById('messages').appendChild(msgDiv);
+    });
+
+    function sendMessage() {
+      console.log('sending something');
+      var message = document.getElementById('msgBox').value;
+      ws.send(message);
+    }
+  </script>
+</head>
+<body>
+  Messages: 
+  <div id="messages">
+    <input type="text" placeholder="Send a message" id="msgBox">
+    <input type="button" onclick="sendMessage()" value="Send">
+  </div>
+</body>
+</html>

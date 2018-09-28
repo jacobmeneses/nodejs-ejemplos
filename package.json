@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/jacobmeneses/nodejs-ejemplos#readme",
   "dependencies": {
-    "pg": "^7.4.3"
+    "ecstatic": "^3.3.0",
+    "pg": "^7.4.3",
+    "ws": "^6.0.0"
   }
 }
