@@ -18,6 +18,7 @@
   "homepage": "https://github.com/jacobmeneses/nodejs-ejemplos#readme",
   "dependencies": {
     "ecstatic": "^3.3.0",
+    "graphql": "^14.0.2",
     "pg": "^7.4.3",
     "redis": "^2.8.0",
     "ws": "^6.0.0"
