@@ -12,6 +12,18 @@ services:
       - network-nodejs-prueba
     ports:
       - "5444:5432"
+  redis:
+    image: redis
+    restart: always
+    ports:
+      - "5445:6379"
+    networks:
+      - network-nodejs-prueba
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "5446:8080"
 volumes:
   dbdata:
 networks:
